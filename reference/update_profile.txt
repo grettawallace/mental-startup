@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% stylesheet_url 'Mental Startup Stylesheet' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400&display=swap" rel="stylesheet">
+    <meta></meta>
+  
+  
+        <style>
+
+          body {
+          background-color: white;
+          font-size: 1em;
+          padding: 0px;
+          margin: 0px;
+          }
+
+          /* Global Styles */
+
+          .center {
+          align-content: center;
+          text-align: center;
+          }
+
+          .left {
+          float: left;
+          }
+
+          .right {
+          float: right;
+          }
+
+          .tall {
+          height: 100vh;
+          min-height: 100%;
+          }
+
+          .full {
+          width: 100%; 
+          }
+
+          .eighty {
+          width: 80%;
+          }
+
+          .ninety {
+          width: 90%;
+          }
+
+
+          .half {
+          width: 50%;
+          }
+
+          .roundtop {  
+          border-radius: 20px 20px 0px 0px;
+          }
+
+          .card {
+          border-radius: 12px 12px 12px 12px;
+          padding: 20px;
+          width: 70%;
+          }
+
+          .dot {
+          height: 25px;
+          width: 25px;
+          background-color: #bbb;
+          border-radius: 50%;
+          }
+
+          .borderleft {
+          border-left: 1px #eeeeee solid;
+          }
+
+
+          /* Headers */
+
+
+          h1 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 35px;
+          font-weight: 400;
+          }
+
+          h2 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          h3 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 35px;
+          font-weight: 100;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          h4 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          p {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          /* Colors */
+
+          .whitetext {
+          color: #ffffff;
+          }
+
+          .pinktext {
+          color: #f9a19c;
+          margin: 10px;
+          }
+
+          .pinkback {
+          background-color: #f9a19c;  
+          }
+
+          .greenback {
+          background-color: #1BBC9D;  
+          }
+
+          .blueback {
+          background-color: #2552b0;  
+          }
+
+          .yellowback {
+          background-color: #fde001;  
+          }
+
+          .grayback {
+          background-color: #eeeeee;
+          }
+
+          .pinkgradient {
+          background-color: #f9a19c;
+          background-image: linear-gradient(to bottom right, #f9a19c, #fa523c); 
+          }
+
+          .greengradient {
+          background-color: #1BBC9D;
+          background-image: linear-gradient(to bottom right, #1BBC9D, #FDE001); 
+          }
+
+          .bluegradient {
+          background-color: #2552B0;
+          background-image: linear-gradient(to bottom right, #2552B0, #1BBC9D); 
+          }
+
+          /* Icons */
+
+          .iconify {
+          color: #7a7a7a;
+          }
+
+          /* Forms */
+
+          label {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          input::placeholder {
+          }
+
+          input[type=text] {
+          padding: 0px 15px;
+          margin-bottom: 15px;
+          height: 40px;
+          border:1px solid #eeeeee;
+          border-radius: 10px 10px 10px 10px;
+          }
+
+          input[type=checkbox] {
+          line-height: 40px;
+          }
+
+          input[type=submit] {
+          margin: 22px 0px;
+          height: 45px;
+          width: 150px;
+          align-content: center;
+          color: #ffffff;
+          border-radius: 30px;
+          border: 0px;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          }
+
+
+          /* Customize the label (the container) */
+          .container {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 12px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+
+          /* Hide the browser's default checkbox */
+          .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+          }
+
+          /* On mouse-over, add a grey background color */
+          .container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          /* When the checkbox is checked, add a blue background */
+          .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+          }
+
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          /* Show the checkmark when checked */
+          .container input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the checkmark/indicator */
+          .container .checkmark:after {
+            left: 5px;
+            top: 0px;
+            width: 2px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          /* Images */
+          
+          img.logo {
+          width: 200px;
+          padding: 25px 30px;
+          }
+
+
+          /* Navbar */
+
+          div.onboard {
+          display: inline-block;
+          position: relative;
+          background-color: #ffffff;
+          background-image: url(https://assets.bettyblocks.com/d50a139e135346b6a3f784bade4500b8_assets/files/Confetti);
+          background-repeat: repeat;
+          filter: blur(3px);
+          -webkit-filter: blur(3px);
+          -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+          mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+          width: 100%;
+          height: 195px;
+          top: 90px;
+          }
+
+          div.navheader {
+          display: inline-block;
+          position: fixed;
+          background-color: #ffffff;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          width: 100%;
+          height: 95px;
+          z-index: 999;
+          }
+
+          div.navlogo {
+          background-color: #ffffff;
+          min-width: 200px;
+          overflow: visible;
+          display: inline-block;
+          position: relative;
+          width: 37%;
+          height: 95px;
+          float: left;
+          }
+
+          img.navlogo {
+          width: 250px;
+          padding: 25px 30px;
+          }
+        
+          nav.navbar {
+          position: relative;
+          left: 0px;
+          display: inline-block;
+          background-color: #ffffff;
+          width: 25%;
+          height: 95px;
+          overflow: hidden;
+          float: left;
+          text-align: center;
+          }
+
+          nav.navbar a {
+          background-color: #ffffff;
+          display: inline-block;
+          height: 95px;
+          padding: 0px 15px;
+          text-align:center;
+          font-family: 'Roboto', Sans-serif;
+          color: #6d7680;
+          font-size: .8em;
+          text-decoration: none;
+          text-transform: uppercase;
+          line-height:95px;
+          }  
+
+          nav.navbar a:hover {
+          height: 90px;
+          color: #f9a19c;
+          border-bottom: 5px solid #f9a19c;
+
+          }   
+
+          div.navbutton {
+          overflow: visible;
+          display: inline-block;
+          position: relative;
+          width: 38%;
+          height: 95px;
+          }
+
+          /* Global DIV Styles */
+
+          div {
+          overflow: visible;
+          display: block;
+          position: relative;
+          }
+
+          div.absolute {
+          display:inline-block;
+          position: absolute;
+          left: 50%;
+          }
+
+          div.shadow {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+
+          div.contentsection {
+          display: inline-block;
+          position: relative;
+          min-width: 545px;
+          width: 80%;
+          left: 10%;
+          margin-top: 150px;
+          }
+
+          div.fullsection {
+          display: inline-block;
+          position: relative;
+          min-width: 100%;
+          width: 100%;
+          left: 0%;
+          margin-top: 0px;
+          }
+
+          div.halfsection {
+          display: inline-block;
+          width: 50%;
+          float: left;
+          }
+
+          div.thirdsection {
+          display: inline-block;
+          width: 33%;
+          float: left;
+          }
+
+          div.quartersection {
+          display: inline-block;
+          width: 25%;
+          float: left;
+          }
+
+          
+          /* Mobile */
+
+
+          #content-desktop {display: block;}
+          #content-mobile {display: none;}
+
+          @media screen and (max-width: 768px) {
+          #content-desktop {display: none;}
+          #content-mobile {display: block;}
+          
+
+          
+      </style>
+  
+  </head>
+ 
+ <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+
+
+<body>
+    <header>
+            
+          <div class="navheader center">
+
+          <div class="navlogo">
+          <img src="https://assets.bettyblocks.com/d50a139e135346b6a3f784bade4500b8_assets/files/Mental_Startup_Logo" class="navlogo">
+          </div>
+
+          <nav class="navbar">
+          </nav> 
+
+          <div class="navbutton">
+          <span class="iconify" data-icon="bx-bxs-user-circle" data-inline="false" style="width:50px;height:50px;color:#cccccc;padding:20px 0px;"></span><br>
+         
+          </div>
+          
+          </div>         
+                
+    </header>
+
+     <section>
+
+          <div class="onboard">
+          </div>    
+
+     </section>  
+
+
+
+    <section>
+
+     <div class="contentsection" style="margin-top: 0px;">
+
+          <div class="left">
+          <span class="iconify" data-icon="bx-bxs-user-circle" data-inline="false" style="width:100px;height:100px;color:#cccccc;padding:20px 0px;"></span>
+               <div class="right absolute" style="top:65%;left:65%">
+                    <div class="dot pinkback center" style="">          
+                    <span class="iconify" data-icon="ic-baseline-edit" data-inline="false" style="width:15px;height:15px;color:#ffffff;margin: 20% 0%;"></span>
+                    </div>
+               </div>
+          </div>
+
+          <div class="left" style="padding: 0px 20px">
+          <h1 style="margin-bottom: 0px;">Full Name</h1>
+          <p>I'm a creator who just signed up for Mental Startup.</p>
+          </div>
+
+     </div>
+
+
+    </section>
+
+
+     <section>
+
+     <div class="contentsection" style="margin-top: 0px;">
+
+          <div class="left">
+          <h2 class="right">User Profile</h2>
+          </div>
+
+          <div class="left borderleft" style="margin-left:20px;padding:20px;width:80%;">
+          
+          <form>
+
+          <div class="halfsection">
+
+               <div class="halfsection">
+               <label>First Name</label><br>
+               <input type="text" placeholder="Full" class="eighty"><br>
+               </div>
+
+               <div class="halfsection">
+               <label>Last Name</label><br>
+               <input type="text" placeholder="Name" class="eighty"><br>
+               </div>
+
+               <label>Email</label><br>
+               <input type="text" placeholder="fullname@email.com" class="ninety"><br>               
+
+               <label>Phone</label><br>
+               <input type="text" placeholder="" class="ninety"><br>  
+
+               <label>Location</label><br>
+               <input type="text" placeholder="" class="ninety"><br>  
+
+               <label>Tagline</label><br>
+               <input type="text" placeholder="I am a creator who just signed up for Mental Startup." class="ninety"><br>  
+
+               <input type="submit" class="blueback" value="Save">
+
+
+          </div>
+          
+          <div class="halfsection">
+               
+               <div style="padding-left:50px;">
+               <label>What Are You Looking For?</label><br>
+               <label class="container">Idea Generation
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+
+               <label class="container">Idea Validation
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+
+               <label class="container">A Support Network
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+
+               <label class="container">Being Mentored
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+               
+               <label class="container">Being Mentored
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Mentoring Others
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Partnering Up
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Getting Funding
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Project Management
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Building an MVP
+               <input type="checkbox">
+               <span class="checkmark"></span>
+               </label> 
+
+               <label class="container">Launch Guidance
+               <input type="checkbox">
+               <span class="checkmark"></span>
+               </label> 
+
+               </div>
+
+          </div>
+          
+          </form>
+          
+          </div>
+
+     </div>
+
+
+    </section>
+
+    <section>
+     <div class="contentsection">
+     </div>
+    </section>
+
+</body>
+</html>

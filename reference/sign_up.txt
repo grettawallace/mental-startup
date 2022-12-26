@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% stylesheet_url 'Mental Startup Stylesheet' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,800&display=swap" rel="stylesheet">
+    <meta></meta>
+  
+  
+        <style>
+
+          body {
+          background-color: white;
+          font-size: 1em;
+          padding: 0px;
+          margin: 0px;
+          }
+
+          /* Global Styles */
+
+          .center {
+          align-content: center;
+          text-align: center;
+          }
+
+          .left {
+          float: left;
+          }
+
+          .right {
+          float: right;
+          }
+
+          .tall {
+          height: 100vh;
+          min-height: 100%;
+          }
+
+          .roundtop {  
+          border-radius: 20px 20px 0px 0px;
+          }
+
+
+          /* Headers */
+
+
+          h1 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 35px;
+          font-weight: 400;
+          }
+
+          h2 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          h3 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 35px;
+          font-weight: 100;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          h4 {
+          font-family: 'Montserrat', Sans-serif;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 1.7;
+          color: #7A7A7A;  
+          }
+
+          /* Colors */
+
+          .whitetext {
+          color: #ffffff;
+          }
+
+          .pinktext {
+          color: #f9a19c;
+          margin: 10px;
+          }
+
+          .blueback {
+          background-color: #2552b0;  
+          }
+
+          .yellowback {
+          background-color: #fde001;  
+          }
+
+          .grayback {
+          background-color: #eeeeee;
+          }
+
+          .pinkgradient {
+          background-color: #f9a19c;
+          background-image: linear-gradient(to bottom right, #f9a19c, #fa523c); 
+          }
+
+          .greengradient {
+          background-color: #1BBC9D;
+          background-image: linear-gradient(to bottom right, #1BBC9D, #FDE001); 
+          }
+
+          .bluegradient {
+          background-color: #2552B0;
+          background-image: linear-gradient(to bottom right, #2552B0, #1BBC9D); 
+          }
+
+          /* Icons */
+
+          .iconify {
+          color: #7a7a7a;
+          }
+
+          /* Forms */
+
+          input::placeholder {
+          }
+
+          input[type=text] {
+          margin: 15px;
+          padding: 0px 15px;
+          width: 60%;
+          height: 40px;
+          border:1px solid #eeeeee;
+          border-radius: 10px 10px 10px 10px;
+
+
+          }
+
+          input[type=submit] {
+          margin: 22px 0px;
+          height: 45px;
+          width: 150px;
+          align-content: center;
+          color: #ffffff;
+          border-radius: 30px;
+          border: 0px;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          }
+
+          /* Images */
+          
+          img.logo {
+          width: 200px;
+          padding: 25px 30px;
+          }
+
+
+          /* Navbar */
+
+          div.navheader {
+          display: inline-block;
+          position: fixed;
+          background-color: #ffffff;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          width: 100%;
+          height: 95px;
+          z-index: 999;
+          }
+
+          div.navlogo {
+          background-color: #ffffff;
+          min-width: 200px;
+          overflow: visible;
+          display: inline-block;
+          position: relative;
+          width: 37%;
+          height: 95px;
+          float: left;
+          }
+
+          img.navlogo {
+          width: 250px;
+          padding: 25px 30px;
+          }
+        
+          nav.navbar {
+          position: relative;
+          left: 0px;
+          display: inline-block;
+          background-color: #ffffff;
+          width: 25%;
+          height: 95px;
+          overflow: hidden;
+          float: left;
+          text-align: center;
+          }
+
+          nav.navbar a {
+          background-color: #ffffff;
+          display: inline-block;
+          height: 95px;
+          padding: 0px 15px;
+          text-align:center;
+          font-family: 'Roboto', Sans-serif;
+          color: #6d7680;
+          font-size: .8em;
+          text-decoration: none;
+          text-transform: uppercase;
+          line-height:95px;
+          }  
+
+          nav.navbar a:hover {
+          height: 90px;
+          color: #f9a19c;
+          border-bottom: 5px solid #f9a19c;
+
+          }   
+
+          div.navbutton {
+          overflow: visible;
+          display: inline-block;
+          position: relative;
+          width: 38%;
+          height: 95px;
+          }
+
+          /* Global DIV Styles */
+
+          div {
+          overflow: visible;
+          display: block;
+          position: relative;
+          }
+
+          div.absolute {
+          display:inline-block;
+          position: absolute;
+          left: 50%;
+          }
+
+          div.shadow {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+
+          div.contentsection {
+          display: inline-block;
+          position: relative;
+          min-width: 545px;
+          width: 80%;
+          left: 10%;
+          margin-top: 150px;
+          }
+
+          div.fullsection {
+          display: inline-block;
+          position: relative;
+          min-width: 100%;
+          width: 100%;
+          left: 0%;
+          margin-top: 0px;
+          }
+
+          div.halfsection {
+          display: inline-block;
+          width: 50%;
+          float: left;
+          }
+
+          div.thirdsection {
+          display: inline-block;
+          width: 33%;
+          float: left;
+          }
+
+          div.quartersection {
+          display: inline-block;
+          width: 25%;
+          float: left;
+          }
+
+          
+
+          /* Mobile */
+
+
+          #content-desktop {display: block;}
+          #content-mobile {display: none;}
+
+          @media screen and (max-width: 768px) {
+          #content-desktop {display: none;}
+          #content-mobile {display: block;}
+          }
+
+          
+      </style>
+  
+  </head>
+ 
+ <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+
+
+   <body>
+    
+    <div class="halfsection tall center shadow" style="z-index: 999;">
+
+          <div style="margin-top: 15%;">
+          <img src="https://assets.bettyblocks.com/d50a139e135346b6a3f784bade4500b8_assets/files/Mental_Startup_Logo" class="logo">
+          </div>
+
+          <div style="margin-top: 50px">
+          <h1>Sign Up for Mental Startup</h1>
+          </div>
+
+          <div>
+          <form>
+          <input type="text" placeholder="Email"><br>
+          <input type="text" placeholder="Password"><br>
+          <input type="submit" class="blueback" value="Sign Up">
+          </form>
+          </div>
+
+          <div style="margin-bottom: 40px;">
+          <h4 style="font-weight: 800;">Already Have an Account? Log In</h4>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+          <h4>By signing up I agree to the Privacy Policy and the Terms of Service<br>
+          2020 All Rights Reserved. Mental Startup</h4>
+          </div>
+
+    </div>
+
+
+
+    
+     <div class="slideshow halfsection tall center pinkgradient">
+                    
+          <div style="margin-top: 30%;">
+          <span class="iconify" data-icon="fa-solid:people-carry" data-inline="false" style="width:100px;height:100px;color:#ffffff;"></span><br>
+          </div>
+
+          <div>
+          <h1 class="whitetext" style="line-height: 40px;">More Than a Social Network<br><span style="font-weight: 100;">You Need a Support Network</span></h1>
+          </div>
+
+          <div>
+          <h2 class="whitetext">Join for free access to other entrepreneurs and experts <br>to generate and validate ideas together.</h2>
+          </div>
+
+     </div>
+
+     <div class="slideshow halfsection tall center greengradient">
+                    
+          <div style="margin-top: 30%;">
+          <span class="iconify" data-icon="fa-regular:lightbulb" data-inline="false" style="width:100px;height:100px;color:#ffffff;"></span><br>
+          </div>
+
+          <div>
+          <h1 class="whitetext" style="line-height: 40px;">From Idea to MVP<br><span style="font-weight: 100;">You Need a Project Guide</span></h1>
+          </div>
+
+          <div>
+          <h2 class="whitetext">Join for free access to the Mental Startup <br>Project Kit to help you get from idea to launch. </h2>
+          </div>
+
+     </div>
+
+     <div class="slideshow halfsection tall center bluegradient">
+                    
+          <div style="margin-top: 30%;">
+          <span class="iconify" data-icon="vaadin-handshake" data-inline="false" style="width:100px;height:100px;color:#ffffff;"></span><br>
+          </div>
+
+          <div>
+          <h1 class="whitetext" style="line-height: 40px;">Use Your Skills to Help Others<br><span style="font-weight: 100;">You Need a Partnership</span></h1>
+          </div>
+
+          <div>
+          <h2 class="whitetext">Join for free access to partnership opportunities with <br>entrepreneurs looking for their other half.</h2>
+          </div>
+
+     </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4500); // Change image every 3 seconds
+}
+</script>
+
+
+</body>
+</html>

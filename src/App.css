@@ -36,3 +36,276 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: white;
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+  }
+
+  /* Global Styles */
+
+  .center {
+  align-content: center;
+  text-align: center;
+  }
+
+ 
+
+  .tall {
+  height: 100vh;
+  min-height: 100%;
+  }
+
+  .roundtop {  
+  border-radius: 20px 20px 0px 0px;
+  }
+
+
+  /* Headers */
+
+
+  h1 {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  }
+
+  h2 {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #7A7A7A;  
+  }
+
+  h3 {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  line-height: 1.7;
+  color: #7A7A7A;  
+  }
+
+  h4 {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #7A7A7A;  
+  }
+
+  /* Colors */
+
+  .whitetext {
+  color: #ffffff;
+  }
+
+  .pinktext {
+  color: #f9a19c;
+  margin: 10px;
+  }
+
+  .blueback {
+  background-color: #2552b0;  
+  }
+
+  .yellowback {
+  background-color: #fde001;  
+  }
+
+  .grayback {
+  background-color: #eeeeee;
+  }
+
+  .pinkgradient {
+  background-color: #f9a19c;
+  background-image: linear-gradient(to bottom right, #f9a19c, #fa523c); 
+  }
+
+  .greengradient {
+  background-color: #1BBC9D;
+  background-image: linear-gradient(to bottom right, #1BBC9D, #FDE001); 
+  }
+
+  .bluegradient {
+  background-color: #2552B0;
+  background-image: linear-gradient(to bottom right, #2552B0, #1BBC9D); 
+  }
+
+  /* Icons */
+
+  .iconify {
+  color: #7a7a7a;
+  }
+
+  /* Forms */
+
+  input[type=text] {
+  margin: 15px;
+  padding: 0px 15px;
+  width: 60%;
+  height: 40px;
+  border:1px solid #eeeeee;
+  border-radius: 10px 10px 10px 10px;
+
+
+  }
+
+  input[type=submit] {
+  margin: 22px 0px;
+  height: 45px;
+  width: 150px;
+  align-content: center;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+
+  /* Images */
+  
+  img.logo {
+  width: 200px;
+  padding: 25px 30px;
+  }
+
+
+  /* Navbar */
+
+  div.navheader {
+  display: inline-block;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 95px;
+  z-index: 999;
+  }
+
+  div.navlogo {
+  background-color: #ffffff;
+  min-width: 200px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  width: 37%;
+  height: 95px;
+  
+  }
+
+  img.navlogo {
+  width: 250px;
+  padding: 25px 30px;
+  }
+
+  nav.navbar {
+  position: relative;
+  left: 0px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 25%;
+  height: 95px;
+  overflow: hidden;
+  
+  text-align: center;
+  }
+
+  nav.navbar a {
+  background-color: #ffffff;
+  display: inline-block;
+  height: 95px;
+  padding: 0px 15px;
+  text-align:center;
+  font-family: 'Roboto', Sans-serif;
+  color: #6d7680;
+  font-size: .8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height:95px;
+  }  
+
+  nav.navbar a:hover {
+  height: 90px;
+  color: #f9a19c;
+  border-bottom: 5px solid #f9a19c;
+
+  }   
+
+  div.navbutton {
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  width: 38%;
+  height: 95px;
+  }
+
+  /* Global DIV Styles */
+
+  div {
+  overflow: visible;
+  display: block;
+  position: relative;
+  }
+
+  div.absolute {
+  display:inline-block;
+  position: absolute;
+  left: 50%;
+  }
+
+  div.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  div.contentsection {
+  display: inline-block;
+  position: relative;
+  min-width: 545px;
+  width: 80%;
+  left: 10%;
+  margin-top: 150px;
+  }
+
+  div.fullsection {
+  display: inline-block;
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  left: 0%;
+  margin-top: 0px;
+  }
+
+  div.halfsection {
+  display: inline-block;
+  width: 50%;
+  
+  }
+
+  div.thirdsection {
+  display: inline-block;
+  width: 33%;
+  
+  }
+
+  div.quartersection {
+  display: inline-block;
+  width: 25%;
+  
+  }
+
+  
+  /* Mobile */
+
+
+  #content-desktop {display: block;}
+  #content-mobile {display: none;}
+
+  @media screen and (max-width: 768px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+  }

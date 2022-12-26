@@ -330,7 +330,7 @@
 
          <div style="padding: 0% 0%"   id="content-mobile">
           <h1>A Social Network for Entrepreneurs and Creators</h1>
-          <h2>Join and follow hundreds of people who are building  the future from applications to social programs.<br><br>What's your project?</h2>
+          <h2>Join and follow hundreds of people who are building the future from applications to social programs.<br><br>What's your project?</h2>
           <form action="http://mentalstartup.com/signup">
           <input type="submit" class="blueback" value="Sign Up" />
           </form>
@@ -340,7 +340,7 @@
 
           <div style="padding: 15% 0%"   id="content-desktop">
           <h1>A Social Network for Entrepreneurs and Creators</h1>
-          <h2>Join and follow hundreds of people who are building  the future from applications to social programs.<br><br>What's your project?</h2>
+          <h2>Join and follow hundreds of people who are building the future from applications to social programs.<br><br>What's your project?</h2>
           <form action="http://mentalstartup.com/signup">
           <input type="submit" class="blueback" value="Sign Up" />
           </form>
@@ -399,7 +399,7 @@
           <div style="padding: 30px 0px 0px 0px; text-align: center;">
           <h1 class="whitetext"><b>Collaborate And Scale Your Project</b><br>With a Support Network</h1>
           <h2 class="whitetext">
-          Draw inspiration from other great minds and validate your ideas together. <br>
+          Draw inspiration from other great minds and validate your ideas together.<br>
           Bring your project from idea to MVP using our organized framework for startups.<br>
           Join for free and see what other creators have already started.
           </h2><br>

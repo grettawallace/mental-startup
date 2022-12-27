@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import { Icon } from '@iconify/react';
-import './App.css';
+import '../styles/Home.css';
 
-function App() {
+function Home() {
   return (
     <>
       <header>
@@ -147,4 +146,4 @@ function App() {
                 );
 }
 
-                export default App;
+                export default Home;

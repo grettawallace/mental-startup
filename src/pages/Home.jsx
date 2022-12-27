@@ -13,11 +13,16 @@ function Home() {
         <div className="navheader center">
 
           <div className="navlogo">
-            <img src="https://assets.bettyblocks.com/d50a139e135346b6a3f784bade4500b8_assets/files/Mental_Startup_Logo" className="navlogo" />
+            <Link to="/" relative="path">
+              <img src="https://assets.bettyblocks.com/d50a139e135346b6a3f784bade4500b8_assets/files/Mental_Startup_Logo" className="navlogo" />
+            </Link>
           </div>
 
           <nav className="navbar">
-            <Link to="/idea_onboard" relative="path">Projects</Link>
+            <Link to="/idea_onboard" relative="path">Ideas</Link>
+            <Link to="/next_steps" relative="path">Onboard</Link>
+            <Link to="/project_onboard" relative="path">Project</Link>
+            <Link to="/update_profile" relative="path">Profile</Link>
           </nav>
 
           <div className="navbutton">

@@ -25,7 +25,7 @@ function Home() {
             <Link to="/update_profile" relative="path">Profile</Link>
           </nav>
 
-          <div className="navbutton">
+          <div className="navbutton" style={{top: '-54px'}}>
             <form action="http://mentalstartup.com/signup">
               <input type="submit" className="blueback" value="Sign Up" />
             </form>

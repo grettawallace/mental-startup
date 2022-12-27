@@ -54,6 +54,14 @@ body {
   text-align: center;
 }
 
+.left {
+  float: left;
+  }
+
+  .right {
+  float: right;
+  }
+
 .tall {
   height: 100vh;
   min-height: 100%;
@@ -74,7 +82,6 @@ body {
 .ninety {
   width: 90%;
 }
-
 
 .half {
   width: 50%;

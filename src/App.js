@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { Icon } from '@iconify/react';
 import './App.css';
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
 
             <div className="halfsection">
 
-              <div id="content-desktop">
+              <div style={{padding: "15% 0%"}} id="content-desktop">
                 <h1>A Social Network for Entrepreneurs and Creators</h1>
                 <h2>Join and follow hundreds of people who are building the future from applications to social programs.<br/><br/>What's your project?</h2>
                   <form action="http://mentalstartup.com/signup">
@@ -62,29 +63,29 @@ function App() {
             <div className="contentsection">
 
               <div className="quartersection">
-                <div>
-                  <span className="iconify" data-icon="ion:bulb-outline" data-inline="false"></span><br/>
+                <div style={{padding: '0px 10px'}}>
+                  <Icon icon="ion:bulb-outline" style={{ fontSize: '50px', color: '#cccccc'  }}/><br/>
                     <h2>You have a great idea for a project and want to get started.</h2>
                 </div>
               </div>
 
               <div className="quartersection">
-                <div>
-                  <span className="iconify" data-icon="ion:newspaper-outline" data-inline="false"></span><br/>
+              <div style={{padding: '0px 10px'}}>
+                <Icon icon="ion:newspaper-outline" style={{ fontSize: '50px', color: '#cccccc'  }}/><br/>
                     <h2>You want to create a plan to start getting things done.</h2>
                 </div>
               </div>
 
               <div className="quartersection">
-                <div>
-                  <span className="iconify" data-icon="ion:thumbs-up-outline" data-inline="false"></span><br/>
+              <div style={{padding: '0px 10px'}}>
+                <Icon icon="ion:thumbs-up-outline" style={{ fontSize: '50px', color: '#cccccc'  }}/><br/>
                     <h2>You want to validate your ideas to stay on the right track.</h2>
                 </div>
               </div>
 
               <div className="quartersection">
-                <div>
-                  <span className="iconify" data-icon="ion-md-contacts" data-inline="false"></span><br/>
+              <div style={{padding: '0px 10px'}}>
+                <Icon icon="ion-md-contacts" style={{ fontSize: '50px', color: '#cccccc'  }}/><br/>
                     <h2>You want a network that can give you feedback and support.</h2>
                 </div>
               </div>
@@ -96,9 +97,9 @@ function App() {
 
 
 
-            <div className="contentsection pinkgradient roundtop">
+            <div className="contentsection pinkgradient roundtop" style={{height: '450px'}}>
 
-              <div>
+              <div style={{padding: '30px 0px 0px 0px', textAlign: 'center'}}>
                 <h1 className="whitetext"><b>Collaborate And Scale Your Project</b><br/>With a Support Network</h1>
                 <h2 className="whitetext">
                   Draw inspiration from other great minds and validate your ideas together.<br/>
@@ -113,23 +114,23 @@ function App() {
                   </div>
 
 
-                  <div className="contentsection grayback">
+                  <div className="contentsection grayback" style={{marginTop: '0px', padding: '20px 0px'}}>
 
-                    <div>
+                    <div style={{width: '70%', left: '15%'}}>
 
-                      <div className="thirdsection">
+                      <div className="thirdsection" style={{textAlign: 'center'}}>
                         <h3 className="pinktext">600</h3>
                         <h2 className="pinktext">Projects</h2>
                       </div>
 
 
-                      <div className="thirdsection">
+                      <div className="thirdsection" style={{textAlign: 'center'}}>
                         <h3 className="pinktext">600</h3>
                         <h2 className="pinktext">Projects</h2>
                       </div>
 
 
-                      <div className="thirdsection">
+                      <div className="thirdsection" style={{textAlign: 'center'}}>
                         <h3 className="pinktext">600</h3>
                         <h2 className="pinktext">Projects</h2>
                       </div>

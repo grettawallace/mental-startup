@@ -346,7 +346,7 @@
           </div>
 
           <div>
-          <h2 class="whitetext">Join for free access to other entrepreneurs and experts <br>to generate and validate ideas together.</h2>
+          <h2 class="whitetext">Join for free access to other entrepreneurs and experts<br>to generate and validate ideas together.</h2>
           </div>
 
      </div>
@@ -362,7 +362,7 @@
           </div>
 
           <div>
-          <h2 class="whitetext">Join for free access to the Mental Startup <br>Project Kit to help you get from idea to launch. </h2>
+          <h2 class="whitetext">Join for free access to the Mental Startup<br>Project Kit to help you get from idea to launch. </h2>
           </div>
 
      </div>
@@ -378,7 +378,7 @@
           </div>
 
           <div>
-          <h2 class="whitetext">Join for free access to partnership opportunities with <br>entrepreneurs looking for their other half.</h2>
+          <h2 class="whitetext">Join for free access to partnership opportunities with<br>entrepreneurs looking for their other half.</h2>
           </div>
 
      </div>

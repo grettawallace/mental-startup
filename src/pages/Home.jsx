@@ -25,11 +25,13 @@ function Home() {
             <Link to="/update_profile" relative="path">Profile</Link>
           </nav>
 
+          <Link to="/signup" relative="path">
           <div className="navbutton" style={{top: '-54px'}}>
             <form action="http://mentalstartup.com/signup">
               <input type="submit" className="blueback" value="Sign Up" />
             </form>
           </div>
+          </Link>
 
         </div>
 
@@ -53,9 +55,11 @@ function Home() {
           <div style={{ padding: "15% 0%" }} id="content-desktop">
             <h1>A Social Network for Entrepreneurs and Creators</h1>
             <h2>Join and follow hundreds of people who are building the future from applications to social programs.<br /><br />What's your project?</h2>
+            <Link to="/signup" relative="path">
             <form action="http://mentalstartup.com/signup">
               <input type="submit" className="blueback" value="Sign Up" />
             </form>
+            </Link>
           </div>
 
         </div>
@@ -114,9 +118,11 @@ function Home() {
             br/ing your project from idea to MVP using our organized framework for startups.<br />
             Join for free and see what other creators have already started.
           </h2><br />
+          <Link to="/signup" relative="path">
           <form action="http://mentalstartup.com/signup">
             <input type="submit" className="yellowback" value="Sign Up" />
           </form>
+          </Link>
         </div>
 
       </div>
